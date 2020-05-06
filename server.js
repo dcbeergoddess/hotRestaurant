@@ -27,6 +27,8 @@ app.get("/", function(req, res){
 
 app.get("/reservation", function(req, res){
   // Send back the reservation request html file
+
+
   res.sendFile(path.join(__dirname, "pages/reserve.html"));
 });
 
@@ -41,6 +43,7 @@ app.get("/api/waitinglist", function(req, res){
 });
 
 app.post("/api/newreservation", function(req, res){
+
   // Parse posted data and do whatever we need to do
   let HTMLPage = "<!DOCTYPE html><head></head><body><p>PLACEHOLDER</p> <a href='http://localhost:3000/'>Back to the main page</a></body></html>";
   const newReservation = req.body;
@@ -55,6 +58,17 @@ app.post("/api/newreservation", function(req, res){
   {
     waitingList.push(newReservation);
     res.sendFile(path.join(__dirname, "pages/resWaiting.html"));
+    
+  const newReservation = req.body;
+  //grab name value from object 
+  console.log(newReservation);
+
+  if(reservations.length < 5) {
+    reservations.push(newReservation);
+    res.end("You now have a reservation.");
+  } else {
+    waitingList.push(newReservation);
+    res.end("You ended up on the waiting list.")
   }
 });
 
