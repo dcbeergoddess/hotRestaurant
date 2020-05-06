@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hot Restaurant</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid text-center">
+    <div class="jumbotron">
+      <h1>Hot Restaurant</h1>
+      <h3>Current Reservations and Waiting List</h3>
+      <hr>
+      <a href="reserve.html"><button id="make-reservation" class="btn btn-danger btn-lg"><span class="fa fa-plus"></span> Make a
+        Reservation</button></a>
+        <a href="index.html"><button id="home" class="btn btn-primary btn-lg"><i class="fa fa-home"></i></button></a>  
+    </div>
+    <div class="container-fluid" id="add-currentTables-area">
+      <div class="card">
+        <div class="card-header">
+          Current Tables
+        </div>
+        <div class="card-body">
+            <h2 id="table-number">Table #1</h2>
+          <div id="current-guest-info">
+            <h3><strong>ID:</strong> <span id="uniqueid">RMM</span></h3>
+            <h3><strong>Name:</strong> <span id="name">Rachel Murray</span></h3>
+            <h3><strong>EMAIL:</strong> <span id="email">rachel@gmail.com</span></h3>
+            <h3><strong>Phone:</strong> <span id="number">6666666666</span></h3>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="add-waitlist-area">
+      <div class="card">
+        <div class="card-header">
+          Waitlist
+        </div>
+        <div class="card-body">
+            <h2 id="waitlist-number">Table #1</h2>
+          <div id="waitlist-guest-info">
+            <h3><strong>ID:</strong> <span id="waitlist-uniqueid">RMM</span></h3>
+            <h3><strong>Name:</strong> <span id="waitlist-name">Rachel Murray</span></h3>
+            <h3><strong>EMAIL:</strong> <span id="waitlist-email">rachel@gmail.com</span></h3>
+            <h3><strong>Phone:</strong> <span id="waitlist-number">6666666666</span></h3>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // do we need to call for tables???
+
+      });
+
+
+    </script>
+
+</body>
+
+</html>

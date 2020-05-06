@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hot Restaurant</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid text-center">
+    <div class="jumbotron">
+      <h1>Hot Restaurant</h1>
+      <h3>Make Your Reservation!</h3>
+      <hr>
+      <a href="tables.html"><button id="view-tables" class="btn btn-success btn-lg"></span><span
+            class="fa fa-bars"></span> View Tables</button></a>
+      <a href="index.html"><button id="home" class="btn btn-primary btn-lg"><i class="fa fa-home"></i></button></a>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="add-reservation-area">
+    <div class="card">
+      <div class="card-header">
+        Make a Reservation
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="new-name" id="new-name" value="">
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="number" class="form-control" name="new-number" id="new-number" value="">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" name="new-email" id="new-email" value=""
+              aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label>Unique ID</label>
+            <input type="text" class="form-control" name="new-uniqueid" id="new-uniqueid" value="">
+          </div>
+          <div class="form-group">
+            <button id="submit-character" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // //Event Handler to process form submission via ajax
+
+    });
+
+
+  </script>
+
+</body>
+
+</html>
