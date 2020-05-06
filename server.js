@@ -70,6 +70,7 @@ app.post("/api/newreservation", function(req, res){
     waitingList.push(newReservation);
     res.end("You ended up on the waiting list.")
   }
+  }
 });
 
 app.listen(PORT, function () {
